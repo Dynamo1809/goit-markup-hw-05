@@ -184,6 +184,13 @@ nav .logo span {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--accent-color);
+  background-color: #ffffff;
 }
 
 .backdrop {
@@ -197,7 +204,7 @@ nav .logo span {
   transition: opacity 700ms ease;
 }
 .backdrop.is-hidden {
-  visibility: hidden;
+  pointer-events: none;
   opacity: 0;
 }
 
